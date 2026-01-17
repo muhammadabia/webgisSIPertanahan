@@ -31,7 +31,7 @@ map.addControl(
     );
 // Pemanggilan Layer Data Jalan
 const jalan = new L.LayerGroup();
-        $.getJSON("./asset/Jalan.geojson", function (OBJECTID) {
+        $.getJSON("asset/Jalan.geojson", function (OBJECTID) {
             L.geoJSON(OBJECTID, {
                 style: {
                     color : "red",
@@ -50,7 +50,7 @@ const jalan = new L.LayerGroup();
         jalan.addTo(map);
 // Pemanggilan Layer Data Persil
 const persil = new L.LayerGroup();
-        $.getJSON("./asset/Persil.geojson", function (OBJECTID) {
+        $.getJSON("asset/Persil.geojson", function (OBJECTID) {
             L.geoJSON(OBJECTID, {
                 style: {
                     fillColor : "yellow",
@@ -99,6 +99,7 @@ let legend = L.control({ position: "topright" });
             return div;
         };
         legend.addTo(map);
+
 
 
 
